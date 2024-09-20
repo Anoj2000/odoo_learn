@@ -8,4 +8,5 @@ class HospitalInventory(models.Model):
 
     inventory_name = fields.Char(string="Inventory Name")
     add_inventory = fields.Char(string="Add Inventory")
+    hello = fields.Char(string="Helloo")
      
