@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="patient_report_view_form" model="ir.ui.view">
+        <field name="name">patient_reort.view.form</field>
+        <field name="model">patient.report</field>
+        <field name="arch" type="xml">
+            <form string="">
+                <sheet>
+                </sheet>
+                <footer>
+                    <button name="download_report" type="object">Download Report</button>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+</odoo>
