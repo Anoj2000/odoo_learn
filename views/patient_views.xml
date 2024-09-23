@@ -32,6 +32,11 @@
                 </form>
             </field>
         </record>
+    <record id="action_hospital_patient_details" model="ir.actions.act_window">
+        <field name="name">Patients</field>
+        <field name="res_model">hospital.patient</field>
+        <field name="view_mode">tree,form</field>
+    </record>
 
     </data>
 </odoo>

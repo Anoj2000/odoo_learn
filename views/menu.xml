@@ -23,60 +23,14 @@
               parent="om_hospital_test.menu_frontdesk"
               sequence="1"/>
 
-    <record id="action_hospital_patient_report" model="ir.actions.act_window">
-        <field name="name">Patient report</field>
-        <field name="res_model">patient.report</field>
-        <field name="view_mode">form</field>
-        <field name="view_id" ref="om_hospital_test.patient_report_view_form" />
-        <field name="target">new</field>
-    </record>
-
-    <record id="action_hospital_patient_details" model="ir.actions.act_window">
-        <field name="name">Patients</field>
-        <field name="res_model">hospital.patient</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
-    <record id="action_hospital_inventory_details" model="ir.actions.act_window">
-        <field name="name">inventory</field>
-        <field name="res_model">hospital.inventory</field>
-        <field name="view_mode">tree,form</field>
-    </record>
-
     <menuitem id="menu_reporting"
               name="Reporting"
               parent="om_hospital_test.menu_hospital_root"
               sequence="5"/>
 
-    <menuitem
-              id="patients_menu_item"
-              name="Actions"
-              parent="om_hospital_test.menu_hospital_root"
-              sequence="3"/>
-
-    <menuitem
-              id="inventory_menu_item"
-              name="Inventory"
-              parent="om_hospital_test.menu_hospital_root"
-              sequence="7"/>
-        
-    <menuitem
-              id="patient_details"
-              name="Patient Details"
-              action="om_hospital_test.action_hospital_patient_details"
-              parent="om_hospital_test.patients_menu_item"
-              sequence="1"/>
-
     <menuitem id="menu_patients"
-              name="Patient report"
+              name="Patient Report"
               parent="om_hospital_test.menu_reporting"
-              sequence="1"
-              action="om_hospital_test.action_hospital_patient_report" />
-
-    <menuitem
-             id="inventory_details"
-             name="Inventory Details"
-             parent="om_hospital_test.inventory_menu_item"
-             sequence="10"
-             action="om_hospital_test.action_hospital_inventory_details" />
+              action="om_hospital_test.action_report_from_patient"
+              sequence="2"/>
 </odoo>

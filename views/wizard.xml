@@ -1,18 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-
     <record id="patient_report_view_form" model="ir.ui.view">
-        <field name="name">patient_reort.view.form</field>
+        <field name="name">patient_report.view.form</field>
         <field name="model">patient.report</field>
         <field name="arch" type="xml">
-            <form string="">
-                <sheet>
-                </sheet>
+            <form string="Print Report">
+                <group>
+                    <group>
+                        <field name="patient_name"/>
+                        <field name="date_of_birth"/>
+                    </group>
+                    <group>
+                        <field name="description"/>
+                    </group>
+                </group>
                 <footer>
-                    <button name="download_report" type="object">Download Report</button>
+                    <button name="download_report" type="object" string="Download Report" class="btn-primary"/>
                 </footer>
             </form>
         </field>
     </record>
 
+    <record id="action_report_from_patient" model="ir.actions.act_window">
+        <field name="name">Patient Report</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">patient.report</field>
+        <field name="view_mode">form</field> 
+        <field name="view_id" ref="patient_report_view_form"/>
+        <field name="target">new</field>
+    </record>
 </odoo>
+
