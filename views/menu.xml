@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="menu_employee_root"
+              name="EMS"
+              sequence="35"
+    />
+
+    <menuitem id="menu_frontdesk"
+              name="Dashboard"
+              parent="cygnus_one_company.menu_employee_root"
+              action="cygnus_one_company.action_company_employer"
+              sequence="1"
+    />
+
+    <menuitem id="menu_employers"
+              name="employers"
+              parent="cygnus_one_company.menu_frontdesk"
+              action="cygnus_one_company.action_company_employer"
+              sequence="1"
+              
+    />
+
+    <menuitem id="employer_reporting"
+              name="Reporting"
+              parent="cygnus_one_company.menu_employee_root"
+              sequence="5"
+              
+    />
+
+    <menuitem id="employer_report"
+              name="employer reports"
+              parent="cygnus_one_company.employer_reporting"
+              action="cygnus_one_company.action_report_from_employer"
+              sequence="1"
+              
+    />
+
+ 
+</odoo>
