@@ -17,7 +17,7 @@
               name="employers"
               parent="cygnus_one_company.menu_frontdesk"
               action="cygnus_one_company.action_company_employer"
-              sequence="1"
+              sequence="5"
               
     />
 
@@ -33,6 +33,14 @@
               parent="cygnus_one_company.employer_reporting"
               action="cygnus_one_company.action_report_from_employer"
               sequence="1"
+              
+    />
+
+    <menuitem id="menu_appointment"
+              name="Appointments"
+              parent="cygnus_one_company.employer_reporting"
+              action="cygnus_one_company.action_employer_appointment"
+              sequence="5"
               
     />
 

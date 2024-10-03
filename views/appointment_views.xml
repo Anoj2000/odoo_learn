@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        
+        <record id="view_appoinment_employer_tree" model="ir.ui.view">
+            <field name="name">company.appointment.tree</field>
+            <field name="model">company.appointment</field>
+            <field name="arch" type="xml">
+                <tree string="Appointments">
+                    <field name="employer_id" optional="show"/>
+                    <field name="date_appointment" optional="show"/>
+                </tree>
+            </field>
+        </record>
+
+        
+        <record id="view_appoinment_employer_form" model="ir.ui.view">
+            <field name="name">company.appointment.form</field>
+            <field name="model">company.appointment</field>
+            <field name="arch" type="xml">
+                <form string="Appointments">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="employer_id"/>
+                                <field name="date_appointment"/>
+                            </group>
+                            <group>
+                                <field name="note"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        
+        <record id="action_employer_appointment" model="ir.actions.act_window">
+            <field name="name">Appointments</field>
+            <field name="res_model">company.appointment</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+    </data>
+</odoo>

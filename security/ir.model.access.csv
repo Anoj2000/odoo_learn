@@ -2,5 +2,8 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_company_employee,access.company.employee,model_company_employee,base.group_user,1,1,1,1
 access_company_employee_admin,access.company.employee.admin,model_company_employee,base.group_system,1,1,1,1
 access_company_employee,access.company.employee,model_report_wizard,base.group_user,1,1,1,1
+access_company_employee_report,access.company.employee.report,model_report_employer_report,base.group_user,1,1,1,1
+access_company_appointment,access.company.appointment,model_company_appointment,base.group_user,1,1,1,1
+
 
 
