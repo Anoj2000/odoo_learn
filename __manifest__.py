@@ -9,6 +9,7 @@
         'wizard/wizard.xml',
         'views/employee_views.xml',
         'views/appointment_views.xml',
+        'data/sequence.xml',
         'report/employee_details_report.xml',
         'views/menu.xml',
     ],

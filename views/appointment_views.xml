@@ -7,6 +7,7 @@
             <field name="model">company.appointment</field>
             <field name="arch" type="xml">
                 <tree string="Appointments">
+                    <field name="reference"/>
                     <field name="employer_id" optional="show"/>
                     <field name="date_appointment" optional="show"/>
                 </tree>
@@ -22,6 +23,7 @@
                     <sheet>
                         <group>
                             <group>
+                                <field name="reference" readonly="True"/>
                                 <field name="employer_id"/>
                                 <field name="date_appointment"/>
                             </group>
